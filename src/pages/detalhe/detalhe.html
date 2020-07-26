@@ -1,0 +1,30 @@
+<ion-content style="background-color: #edebeb;">
+	<div class="backg" [ngStyle]="{ 'background' : 'url(http://localhost/teste_ezoom/images/' + dados.foto_principal + ')', 'background-size' : 'cover'}">
+		<div class="topo">
+			<div class="icon-gears">
+				<img src="assets/imgs/icon-gears.png" alt="icon gears"/>
+			</div>
+			<div class="icon-menu">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+		</div>
+		<div class="icon-back" (click)="BackHome()">
+			<ion-icon name="arrow-dropleft"></ion-icon>
+		</div>
+	    <ion-title class="title" (click)="BackHome()">
+	      {{dados.titulo}}
+	    </ion-title>
+	</div>
+	
+	<div class="div-curso">
+		{{dados.descricao}}
+		
+		<div class="fotos" *ngFor="let foto of detalhes; let i = index" col-6>
+			<img src="http://localhost/teste_ezoom/images/{{foto.foto}}" alt="" (click)="OpenGallery('http://localhost/teste_ezoom/images/'+foto.foto)"/>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	<div id="foto_ampliada"></div>
+</ion-content>

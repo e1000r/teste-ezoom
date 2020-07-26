@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+<ion-content style="background-color: #edebeb;">
+	<div class="backg">
+		<div class="topo">
+			<div class="icon-gears">
+				<img src="assets/imgs/icon-gears.png" alt="icon gears"/>
+			</div>
+			<div class="icon-menu">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+		</div>
+	    <ion-title class="title">
+	      CURSOS E TREINAMENTOS
+	    </ion-title>
+	    <p class="subtitle">
+	      Selecione o curso ou treinamento que deseja.
+	    </p>
+	</div>
+	
+	<div class="div-lista">
+		<ion-list>
+			<ion-item *ngFor="let curso of cursos" (click)="DetalhesCurso(curso)">
+				<h2 class="titulo">{{curso.titulo}}</h2>
+				<ion-thumbnail item-end class="foto_principal">
+					<img src="http://localhost/teste_ezoom/images/{{curso.foto_principal}}" alt="" />
+				</ion-thumbnail>
+			</ion-item>
+		</ion-list>
+	</div>
 </ion-content>

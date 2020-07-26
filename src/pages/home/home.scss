@@ -1,3 +1,38 @@
 page-home {
-
+	.subtitle {
+		text-align: center;
+		color: #fff;
+	}
+	.titulo {
+		font-size: 0.8em;
+		margin-left: 30px;
+	}
+	.div-lista {
+		padding: 30px;
+	}
+	.item {
+		padding: 0;
+	}
+	.item-inner {
+		padding: 10px;
+	}
+	.item-md.item-block .item-inner,
+	.list-ios .item-block .item-inner {
+		border-bottom: 0.55px solid #edebeb;
+	}
+	.foto_principal img {
+		border-radius: 20px;
+		height: 80px;
+		width: 80px;
+	}
+	.item-block:first-child,
+	.list-ios > .item-block:first-child {
+		border: none;
+		border-radius: 8px 8px 0 0;
+	}
+	.item-block:last-child,
+	.list-ios > .item-block:last-child {
+		border: none;
+		border-radius: 0 0 8px 8px;
+	}
 }
