@@ -1,13 +1,21 @@
 page-detalhe {
 	.icon-back {
-		clear: both;
+		position: relative;
+		display: inline-block;
+		top: 20px;
+		width: 100%;
 		color: #fff;
 		font-size: 2em;
-		margin: 20px 0;
 		text-align: center;
 	}
 	
+	ion-title .toolbar-title {
+		margin-top: 40px;
+	}
+	
 	.div-curso {
+		position: relative;
+		top: 40%;
 		margin: 30px;
 		padding: 15px;
 		border-radius: 8px;
@@ -26,13 +34,5 @@ page-detalhe {
 		width: 100%;
 		height: auto;
 		border-radius: 6px;
-	}
-	
-	#foto_ampliada {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
 	}
 }

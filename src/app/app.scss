@@ -16,12 +16,31 @@
 // automatically applied to the <body> element in the app.
 
 
-.topo {
-	padding: 40px;
-	margin-bottom: 100px;
+ion-header {
+    background: url('../assets/imgs/backhome.jpg') no-repeat transparent;
+    background-size: cover;
+	height: 40%;
+    z-index: 1;
+	border-radius: 0 0 10px 10px;
+}
+ion-title .toolbar-title {
+	color: #ff0000;
+	text-align: center;
+	margin-top: 80px;
+	font-size: 1.5em;
+}
+.toolbar-ios ion-title,
+ion-title.title.title-md {
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.back-button.show-back-button {
+	display: none;
 }
 .icon-gears {
 	float: left;
+	padding: 40px 0 0 40px;
 }
 .icon-gears img {
 	width: 50px;
@@ -33,20 +52,7 @@
 	color: #fff;
 	font-size: 2em;
 	margin-top: 10px;
-}
-.backg {
-    position: relative;
-    background: url('../assets/imgs/backhome.jpg') no-repeat transparent;
-    background-size: cover;
-	height: 45%;
-    z-index: 1;
-	border-radius: 0 0 10px 10px;
-}
-.title * {
-	clear: both;
-	color: #ff0000;
-	font-size: 1.5em;
-	text-align: center;
+	padding: 40px 40px 0 0;
 }
 .clear {
 	clear: both;

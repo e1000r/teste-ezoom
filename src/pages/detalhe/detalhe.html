@@ -1,5 +1,6 @@
 <ion-content style="background-color: #edebeb;">
-	<div class="backg" [ngStyle]="{ 'background' : 'url(http://localhost/teste_ezoom/images/' + dados.foto_principal + ')', 'background-size' : 'cover'}">
+	<ion-header no-border [ngStyle]="{ 'background' : 'url(http://localhost/teste_ezoom/images/' + dados.foto_principal + ')', 'background-size' : 'cover'}">
+	  <ion-navbar transparent>
 		<div class="topo">
 			<div class="icon-gears">
 				<img src="assets/imgs/icon-gears.png" alt="icon gears"/>
@@ -11,10 +12,9 @@
 		<div class="icon-back" (click)="BackHome()">
 			<ion-icon name="arrow-dropleft"></ion-icon>
 		</div>
-	    <ion-title class="title" (click)="BackHome()">
-	      {{dados.titulo}}
-	    </ion-title>
-	</div>
+	    <ion-title>{{dados.titulo}}</ion-title>
+	  </ion-navbar>
+	</ion-header>
 	
 	<div class="div-curso">
 		{{dados.descricao}}

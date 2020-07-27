@@ -1,21 +1,19 @@
-<ion-content style="background-color: #edebeb;">
-	<div class="backg">
-		<div class="topo">
-			<div class="icon-gears">
-				<img src="assets/imgs/icon-gears.png" alt="icon gears"/>
-			</div>
-			<div class="icon-menu">
-				<ion-icon name="menu"></ion-icon>
-			</div>
+<ion-content fullscreen style="background-color: #edebeb;">
+	<ion-header no-border>
+	  <ion-navbar transparent>
+		<div class="icon-gears">
+			<img src="assets/imgs/icon-gears.png" alt="icon gears"/>
 		</div>
-	    <ion-title class="title">
-	      CURSOS E TREINAMENTOS
-	    </ion-title>
+		<div class="icon-menu">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+	    <ion-title>CURSOS E TREINAMENTOS</ion-title>
 	    <p class="subtitle">
 	      Selecione o curso ou treinamento que deseja.
 	    </p>
-	</div>
-	
+	  </ion-navbar>
+	</ion-header>
+
 	<div class="div-lista">
 		<ion-list>
 			<ion-item *ngFor="let curso of cursos" (click)="DetalhesCurso(curso)">
